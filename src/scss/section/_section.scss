@@ -1,0 +1,43 @@
+
+
+
+.section-full {
+  position: relative;
+  &-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .7;
+  }
+
+  &-inner {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(bottom, rgba(178, 36, 239, 0.45), rgba(117, 121, 255, 0.45));
+    //padding-top: 160px;
+    //padding-bottom: 160px;
+  }
+
+  &-header,
+  &-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 30px 15px;
+  }
+
+  &-header {
+    top: 0;
+    min-height: 50px;
+  }
+
+  &-footer {
+    bottom: 0;
+  }
+}
