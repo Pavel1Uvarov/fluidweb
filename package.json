@@ -23,5 +23,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pavel1Uvarov/fluidweb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pavel1Uvarov/fluidweb/issues"
+  },
+  "homepage": "https://github.com/Pavel1Uvarov/fluidweb#readme"
 }

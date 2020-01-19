@@ -1,28 +1,45 @@
-@import 'variables';
+@import 'base/variables';
+@import 'base/typo';
 
 body {
-  background: $grey;
+  margin: 0;
+  padding: 0;
 }
-.row {
+input {
+  outline: none;
+}
+.full-size {
   position: relative;
-  display: flex;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  background: $red;
-  &_block {
+  min-height: 100vh;
+  width: 100%;
+  z-index: 1;
+  &:before {
+    content: "";
+    display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    width: 50px;
-    height: 50px;
-    background: blue;
-    &:hover {
-      background: green;
-      zoom: 1.5;
-      transition: all 4s;
-    }
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: -webkit-linear-gradient(bottom,#b224ef,#7579ff);
+    opacity: .3;
   }
+}
+header {
+  min-height: 50px;
+}
+.bg-page {
+  display: block!important;
+  position: fixed!important;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.block-center {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
 }
