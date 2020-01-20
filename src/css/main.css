@@ -52,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: -webkit-linear-gradient(bottom, rgba(178, 36, 239, 0.45), rgba(117, 121, 255, 0.45)); }
+    background: -webkit-linear-gradient(bottom, rgba(0, 160, 255, 0.4), rgba(0, 21, 255, 0.52)); }
   .section-full-header, .section-full-footer {
     position: absolute;
     left: 0;
@@ -60,9 +60,13 @@
     padding: 30px 15px; }
   .section-full-header {
     top: 0;
-    min-height: 50px; }
+    min-height: 70px;
+    background-color: rgba(255, 255, 255, 0.05); }
   .section-full-footer {
     bottom: 0; }
+  .section-full-content {
+    padding-top: 150px;
+    padding-bottom: 150px; }
 
 body {
   margin: 0;
@@ -92,13 +96,13 @@ img {
   box-shadow: 26px 24px 33px -11px rgba(0, 0, 0, 0.27);
   padding: 0 20px 0 20px;
   font-family: 'Poppins', sans-serif;
-  background: rgba(72, 85, 255, 0.59);
-  color: white; }
+  background: rgba(255, 249, 255, 0.67);
+  color: black; }
   .subscribe-email:focus {
     transition: all 1s;
-    background: rgba(72, 85, 255, 0.79); }
+    background: rgba(255, 249, 255, 0.67); }
   .subscribe-email::placeholder {
-    color: white; }
+    color: black; }
   @media screen and (max-width: 375px) {
     .subscribe-email {
       max-width: 250px; } }
@@ -113,13 +117,21 @@ img {
   -webkit-box-shadow: 26px 24px 33px -11px rgba(0, 0, 0, 0.27);
   -moz-box-shadow: 26px 24px 33px -11px rgba(0, 0, 0, 0.27);
   box-shadow: 26px 24px 33px -11px rgba(0, 0, 0, 0.27);
-  background: rgba(72, 85, 255, 0.59);
+  background: #00a0ff;
   color: white; }
   .subscribe-btn:hover {
     transition: all 1s;
-    background: rgba(72, 85, 255, 0.79); }
+    background: #0076ff; }
   @media screen and (max-width: 991px) {
     .subscribe-btn {
       margin-top: 30px; } }
+
+.logo img {
+  max-width: 100px;
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .logo img {
+      max-width: 50px;
+      width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

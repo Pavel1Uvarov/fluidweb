@@ -32,19 +32,20 @@ img {
   box-shadow: 26px 24px 33px -11px rgba(0,0,0,0.27);
   padding: 0 20px 0 20px;
   font-family: 'Poppins', sans-serif;
-  background: rgba(72, 85, 255, 0.59);
-  color: white;
+  background: rgba(255, 249, 255, 0.67);
+  color: black;
   &:focus {
     transition: all 1s;
-    background: rgba(72, 85, 255, 0.79);
+    background: rgba(255, 249, 255, 0.67);
   }
   &::placeholder{
-    color: white;
+    color: black;
   }
   @media screen and (max-width: 375px) {
     max-width: 250px;
   }
 }
+
 .subscribe-btn {
   max-width: 100px;
   width: 100%;
@@ -55,13 +56,21 @@ img {
   -webkit-box-shadow: 26px 24px 33px -11px rgba(0,0,0,0.27);
   -moz-box-shadow: 26px 24px 33px -11px rgba(0,0,0,0.27);
   box-shadow: 26px 24px 33px -11px rgba(0,0,0,0.27);
-  background: rgba(72, 85, 255, 0.59);
+  background: rgb(0, 160, 255);
   color: white;
   &:hover {
     transition: all 1s;
-    background: rgba(72, 85, 255, 0.79);
+    background: rgb(0, 118, 255);
   }
   @media screen and (max-width: 991px) {
     margin-top: 30px;
+  }
+}
+.logo img {
+  max-width: 100px;
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    max-width: 50px;
+    width: 100%;
   }
 }
